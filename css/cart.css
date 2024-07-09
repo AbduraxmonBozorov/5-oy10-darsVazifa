@@ -1,0 +1,144 @@
+
+
+.mainContainer > h1{
+    /* border: 1px solid red; */
+    margin-top: 100px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgb(57 78 106);
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(226 232 244);
+    margin-bottom: 10px;
+}
+
+.shop{
+    margin-top: 50px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.shop > * {
+    width: 20%;
+    /* border: 1px solid red; */
+    padding: 0px 20px;
+}
+
+.shop img{
+    padding: 0;
+    border-radius: 10px;
+}
+
+.shop .title{
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title h2{
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgb(57 78 106);
+}
+
+.title h3{
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: rgba(57, 78, 106, 0.491);
+}
+
+.count{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.count h2{
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+}
+
+.count input{
+    display: inline-block;
+    width: auto;
+    padding: 3px;
+    border-radius: 8px;
+    border: none;
+    border:1px solid rgb(221, 223, 227);
+}
+
+.count button{
+    background-color: red;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.count button:hover{
+    background-color: rgb(174, 9, 9);
+}
+
+
+.price h2{
+    color: rgb(57 78 106);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.totalPrice{
+    background-color: rgb(240 246 255);
+    border-radius: 10px;
+    padding: 20px;
+}
+.totalPrice table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+
+table td{
+    border-bottom: 1px solid rgb(221, 223, 227);
+
+}
+
+table tr td:last-child{
+    text-align: end;
+    padding-right: 20px;
+}
+
+table tr td:first-child {
+    text-align: start;
+    padding-right: 20px;
+}
+
+
+.sale{
+    margin-top: 30px;
+    text-align: end;
+}
+
+.sale button{
+    border: none;
+    background-color: rgb(5 122 255);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.sale button:hover{
+    background-color: rgb(6, 100, 207);
+}
+

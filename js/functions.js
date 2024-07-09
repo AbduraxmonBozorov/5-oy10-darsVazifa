@@ -36,5 +36,46 @@ function createDetailes(product){
     `
 }
 
+function createShop(product, id, count){
+    return `
+        <div class="shop">
+                <img src="${product.attributes.image}"
+                    alt="shop img">
+                <div class="title">
+                    <h2>${product.attributes.title}</h2>
+                    <h3>${product.attributes.company}</h3>
+                </div>
+                <div class="count">
+                    <h2>Count</h2>
+                    <input type="number" name="count" id="count" value="${count}">
+                    <button>Remove</button>
+                </div>
+                <div class="price">
+                    <h2>$${product.attributes.price/100}</h2>
+                </div>
+                <div class="totalPrice">
+                    <table>
+                        <tr>
+                            <td>Subtotal</td>
+                            <td>$${(product.attributes.price/100)*count}</td>
+                        </tr>
+                        <tr>
+                            <td>Shipping</td>
+                            <td>$5.0</td>
+                        </tr>
+                        <tr>
+                            <td>Tax</td>
+                            <td>$40.0</td>
+                        </tr>
+                        <tr>
+                            <td>Order Total</td>
+                            <td>$${(product.attributes.price/100)*count + 45}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+    `
+}
 
-export{createProduct, createDetailes};
+
+export{createProduct, createDetailes, createShop};

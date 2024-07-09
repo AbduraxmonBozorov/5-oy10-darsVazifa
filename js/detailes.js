@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     let url=window.location.href
     let productId=url.split("id=")[1]
     if(!productId){
-        window.location.assign("http://127.0.0.1:5500/index.html");
+        window.location.assign("https://5-oy10-dars-vazifa-v618.vercel.app/index.html");
     }
     // console.log(productId);
     fetch(`https://strapi-store-server.onrender.com/api/products/${productId}`)
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             // console.log(id);
             let count=document.querySelector("select").value
 
-            window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=${id}&count=${count}`);   
+            window.location.assign(`https://5-oy10-dars-vazifa-v618.vercel.app/pages/cart.html?id=${id}&count=${count}`);   
         })
     })
 })

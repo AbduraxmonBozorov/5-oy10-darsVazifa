@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             card.addEventListener('click', (event)=>{
                 let cardId=card.getAttribute("data-id")
                 // console.log(card.getAttribute("data-id"));
-                window.location.assign(`http://127.0.0.1:5500/pages/detailes.html?id=${cardId}`);
+                window.location.assign(`https://5-oy10-dars-vazifa-v618.vercel.app/pages/detailes.html?id=${cardId}`);
             })
         })
     })

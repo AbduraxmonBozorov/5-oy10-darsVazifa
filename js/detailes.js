@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
             // console.log(id);
             let count=document.querySelector("select").value
 
-            window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=19&count=${count}`);   
+            window.location.assign(`http://127.0.0.1:5500/pages/cart.html?id=${id}&count=${count}`);   
         })
     })
 })

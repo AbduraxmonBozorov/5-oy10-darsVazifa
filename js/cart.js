@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         let shop=createShop(data.data, id, count);
         selectedProducts.innerHTML=shop;
         
-
     })
 
 
